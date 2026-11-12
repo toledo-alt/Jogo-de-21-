@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal21
 {
-    internal class Banca
+    internal class Banca : Jogador
+
     {
+
+
+
+
     }
 }
