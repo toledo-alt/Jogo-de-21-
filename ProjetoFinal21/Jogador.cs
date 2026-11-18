@@ -36,7 +36,14 @@ namespace ProjetoFinal21
             pontos = 0;
             foreach (Carta c in mao)
             {
-
+                if(c.Valor + pontos >21 && c.Tipo == "A")
+                {
+                    c.Valor = 1;
+                }
+                else if (c.Tipo == "A")
+                {
+                    c.Valor = 11;
+                }
                 pontos += c.Valor;
             }
         }
@@ -46,6 +53,7 @@ namespace ProjetoFinal21
         public void pedirCarta(Carta carta)
         {
             mao.Add(carta);
+            AtualizaPontos();
         }
 
         

@@ -8,5 +8,15 @@ namespace ProjetoFinal21
 {
     internal class Jogo
     {
+
+        private Jogador jogador;
+        private Banca banca;
+
+
+
+
+
+
+
     }
 }
